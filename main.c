@@ -80,7 +80,7 @@ int main()
 		fclose(fp); 
 	}
     
-    struct Student a;
+    struct Student temp;
 
     for (int i = 0; i < n; ++i) 
         {
@@ -88,9 +88,9 @@ int main()
             {
                 if (students[i].average < students[j].average) 
                 {
-                    a = students[i];
+                    temp = students[i];
                     students[i] = students[j];
-                    students[j] = a;
+                    students[j] = temp;
                 }
             }
         } 
